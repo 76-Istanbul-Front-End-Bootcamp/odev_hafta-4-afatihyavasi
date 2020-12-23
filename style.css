@@ -153,7 +153,7 @@ label:hover {
     justify-content: center;
 }
 
-.currency-amount input[type="number"] {
+.currency-amount input[type="text"] {
     border-bottom: #c6c2c2 2px solid;
     border-top-style: none;
     border-left-style: none;
@@ -163,7 +163,7 @@ label:hover {
     width: 200px;
 }
 
-.currency-amount input[type="number"]:focus {
+.currency-amount input[type="text"]:focus {
     border-bottom: #111 2px solid;
     width: 280px;
 }
