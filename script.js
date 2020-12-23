@@ -100,7 +100,7 @@ function clickButton() {
     } else if (fromTarget === toTarget) {
         //Secimlerin benzerligi kontrol edildi
         errorSame = document.getElementById("snackbar");
-        errorSame.textContent = "You should'nt make same chooice"
+        errorSame.textContent = "You should'nt make same choice"
         showError();
     } else {
         fadeAnimation.classList.add("fadein");

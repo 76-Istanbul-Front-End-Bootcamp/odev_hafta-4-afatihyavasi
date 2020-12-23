@@ -181,10 +181,6 @@ label:hover {
     transform: rotate(90deg);
 }
 
-.currency-calculate button img:hover {
-    border-radius: 11px;
-    background: #92e073;
-}
 
 .currency-calculate button img {
     width: 40px;
