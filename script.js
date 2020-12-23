@@ -8,7 +8,7 @@ const data = {
 const currencyKeys = Object.keys(data);
 
 function showError() {
-    var x = document.getElementById("snackbar");
+    const x = document.getElementById("snackbar");
     x.className = "show";
     setTimeout(function () {
         x.className = x.className.replace("show", "");
@@ -65,19 +65,19 @@ function clickButton() {
     //radio buton secimi kontrolunu yapar
     if (!checkFrom) {
         //birinci buton secim yapilmadiysa yazdirir
-        errorFrom = document.getElementById("snackbar");
+        const errorFrom = document.getElementById("snackbar");
         errorFrom.textContent = 'First choice not selected'
         showError();
     }
     if (!checkTo) {
         //ikinci buton secim yapilmadiysa yazdirir
-        errorTo = document.getElementById("snackbar");
+        const errorTo = document.getElementById("snackbar");
         errorTo.textContent = 'Second choice not selected'
         showError();
     }
     if (!checkFrom && !checkTo) {
         //ikiside secim yapmadiysa yazdirir
-        errorBoth = document.getElementById("snackbar");
+        const errorBoth = document.getElementById("snackbar");
         errorBoth.textContent = 'Any choice not selected'
         showError();
     }
@@ -88,25 +88,25 @@ function clickButton() {
     const resultForOne = currentCurrencyObject[toTarget];
     const result = amount * resultForOne;
     //amount check block
-    if (amount == "") {
-        errorFill = document.getElementById("snackbar");
+    if (amount === "") {
+        const errorFill = document.getElementById("snackbar");
         errorFill.textContent = " Fill the amount. "
         showError();
     } else if (isNaN(amount)) {
         // Number kontrolu yapildi
-        errorNaN = document.getElementById("snackbar");
+        const errorNaN = document.getElementById("snackbar");
         errorNaN.textContent = " Amount not a number. "
         showError();
     } else if (fromTarget === toTarget) {
         //Secimlerin benzerligi kontrol edildi
-        errorSame = document.getElementById("snackbar");
+        const errorSame = document.getElementById("snackbar");
         errorSame.textContent = "You shouldn't make same choice"
         showError();
     } else {
         fadeAnimation.classList.add("fadein");
         // Fadein class i ekledikten sonra bir sonraki click te yine aynisini yapmak icin
         // kaldiridi
-        fadeAnimation.addEventListener('animationend', function (e) {
+        fadeAnimation.addEventListener('animationend', function () {
             fadeAnimation.classList.remove('fadein');
         })
         const listElement = document.createElement("li");

@@ -28,7 +28,9 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
 }
-
+*:focus{
+    outline: none;
+}
 ol, ul {
     list-style: none;
 }
@@ -57,10 +59,9 @@ body {
     background: #ffffff;
 
 }
-*:focus {
+*:focus{
     outline: none;
 }
-
 .legend {
     text-align: center;
     font-family: 'Raleway', sans-serif;
@@ -114,7 +115,7 @@ header img {
 }
 
 
-label {
+label:not(#amount-label) {
     display: flex;
     background-color: #ffffff;
     padding: 10px 20px;
@@ -167,6 +168,7 @@ label:hover {
     width: 280px;
 }
 
+
 .currency-calculate {
     display: flex;
     justify-content: center;
@@ -178,26 +180,23 @@ label:hover {
     background: none;
     cursor: pointer;
     transition: all 400ms;
-    
 }
 
 .currency-calculate button:hover {
     transform: rotate(90deg);
 }
+
 .currency-calculate button img:hover {
     border-radius: 11px;
     background: #92e073;
 }
-
 
 .currency-calculate button img {
     width: 40px;
     height: 40px;
     transition: all 400ms;
     opacity: .8;
-    outline: none;
 }
-
 
 .list-last {
     display: flex;
@@ -218,6 +217,10 @@ label:hover {
     margin: 1px auto;
     padding: 3px;
     color: #111111;
+}
+.list-last-value li:first-child[--nth-word="1"]
+{
+    color: red;
 }
 
 .list-last-value li {
@@ -323,7 +326,7 @@ label:hover {
         padding: 16px;
         position: fixed;
         z-index: 1;
-        left: 50%;
+        left: 45%;
         bottom: 30px;
     }
 
