@@ -92,12 +92,8 @@ function clickButton() {
         const errorFill = document.getElementById("snackbar");
         errorFill.textContent = " Fill the amount. "
         showError();
-    } else if (isNaN(amount)) {
-        // Number kontrolu yapildi
-        const errorNaN = document.getElementById("snackbar");
-        errorNaN.textContent = " Amount not a number. "
-        showError();
-    } else if (fromTarget === toTarget) {
+    } 
+        else if (fromTarget === toTarget) {
         //Secimlerin benzerligi kontrol edildi
         const errorSame = document.getElementById("snackbar");
         errorSame.textContent = "You shouldn't make same choice"
@@ -116,7 +112,7 @@ function clickButton() {
     //Secim yapildiktan sonra radio buttonlarin secimlerini sfirilar
     checkFrom.checked = false;
     checkTo.checked = false;
-    document.querySelector("input[type='text']").value = "";
+    document.querySelector("input[type='number']").value = "";
 }
 
 
