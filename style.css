@@ -115,7 +115,7 @@ header img {
 }
 
 
-label:not(#amount-label) {
+label {
     display: flex;
     background-color: #ffffff;
     padding: 10px 20px;
