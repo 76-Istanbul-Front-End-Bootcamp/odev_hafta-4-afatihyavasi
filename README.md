@@ -1,3 +1,3 @@
 **Simple Exchange App**
 
-[Live Demo](https://odevhafta-4-afatihyavasi.afatihyavasi.repl.co/)
+[Live Demo](https://odevhafta-4-afatihyavasi-2.afatihyavasi.repl.co/)
