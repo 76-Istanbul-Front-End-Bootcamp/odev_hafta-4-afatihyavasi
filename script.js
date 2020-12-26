@@ -111,11 +111,12 @@ function clickButton() {
         })
         const listElement = document.createElement("li");
         listElement.textContent = amount + " " + fromTarget + " = " + result.toFixed(2) + " " + toTarget;
-        resultList.insertBefore(listElement, resultList.firstChild);
+        resultList.insertBefore(listElement, resultList.firstChild);  
+        checkFrom.checked = false;
+        checkTo.checked = false;
+        document.querySelector("input[type='text']").value = "";
     }
     //Secim yapildiktan sonra radio buttonlarin secimlerini sfirilar
-    checkFrom.checked = false;
-    checkTo.checked = false;
-    document.querySelector("input[type='text']").value = "";
+
 }
 
